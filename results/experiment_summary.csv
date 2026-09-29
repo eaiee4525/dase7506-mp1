@@ -1,0 +1,11 @@
+experiment,model,seed,steps,train_targets,parameters,dropout,validation_bpb,train_seconds,role
+baseline,GELU-w128-d4,17,1200,9830400,1088256,0.0,2.0710874334,184.5051,controlled baseline
+swiglu_1200,SwiGLU-w128-d4,17,1200,9830400,1088424,0.0,2.0173122630,150.8404,parameter-matched architecture comparison
+swiglu_3600,SwiGLU-w128-d4,17,3600,29491200,1088424,0.0,1.7772243213,511.0111,training-length comparison
+medium_3600,SwiGLU-w192-d6,17,3600,29491200,3113472,0.0,1.6888780291,1442.5839,capacity comparison
+medium_7200,SwiGLU-w192-d6,17,7200,58982400,3113472,0.0,1.6700253476,3095.1729,no-dropout control
+d6_dropout,SwiGLU-w192-d6,17,7200,58982400,3113472,0.1,1.6177457830,3250.4664,dropout ablation and ensemble component
+d8_dropout,SwiGLU-w192-d8,17,7200,58982400,4003712,0.1,1.5987255661,4610.1329,depth comparison
+d8_late_average,SwiGLU-w192-d8,17,7200,58982400,4003712,0.1,1.5958788690,,equal average of steps 6000 6600 and 7200
+d6_d8_ensemble,probability ensemble,17+17,7200+7200,117964800,7117184,0.1,1.5579231746,,D6 weight 0.40 and D8 weight 0.60
+final_predictor,ensemble plus temperature,17+17,7200+7200,117964800,7117184,0.1,1.5558912737,,temperature 1.05

@@ -1,0 +1,98 @@
+{
+  "protocol": "7506-mp1-wt2-v2",
+  "implementation": "student",
+  "config": {
+    "vocab": 2048,
+    "width": 128,
+    "heads": 4,
+    "depth": 4,
+    "context": 256
+  },
+  "seed": 17,
+  "parameters": 1088424,
+  "precision": "fp32",
+  "train_tokens": 9830400,
+  "preparation_seconds": 3.9191315000061877,
+  "train_seconds": 150.84036208299221,
+  "validation": {
+    "bpb": 2.0173122630159614,
+    "token_ppl": 70.98693120367132,
+    "nll_nats": 1605251.6529766088,
+    "targets": 376599,
+    "utf8_bytes": 1148007,
+    "seconds": 3.1729501669760793
+  },
+  "history": [
+    {
+      "step": 100,
+      "loss": 6.0099005699157715,
+      "seconds": 12.517852874996606
+    },
+    {
+      "step": 200,
+      "loss": 5.200226306915283,
+      "seconds": 25.24234387499746
+    },
+    {
+      "step": 300,
+      "loss": 4.866252899169922,
+      "seconds": 37.72734008298721
+    },
+    {
+      "step": 400,
+      "loss": 4.590062618255615,
+      "seconds": 50.499493875016924
+    },
+    {
+      "step": 500,
+      "loss": 4.562201023101807,
+      "seconds": 63.02334308298305
+    },
+    {
+      "step": 600,
+      "loss": 4.437778949737549,
+      "seconds": 75.4701785829966
+    },
+    {
+      "step": 700,
+      "loss": 4.315057277679443,
+      "seconds": 87.95685162500013
+    },
+    {
+      "step": 800,
+      "loss": 4.345376014709473,
+      "seconds": 100.45384587498847
+    },
+    {
+      "step": 900,
+      "loss": 4.227905750274658,
+      "seconds": 112.92467300000135
+    },
+    {
+      "step": 1000,
+      "loss": 4.206361293792725,
+      "seconds": 125.47339958301745
+    },
+    {
+      "step": 1100,
+      "loss": 4.150823593139648,
+      "seconds": 138.15465074998792
+    },
+    {
+      "step": 1200,
+      "loss": 4.154152870178223,
+      "seconds": 150.84031266602688
+    }
+  ],
+  "validation_history": [],
+  "intermediate_validation_seconds": 0.0,
+  "process_seconds": 157.94280008302303,
+  "torch_version": "2.7.1",
+  "threads": 4,
+  "checkpoint_sha256": "f6df2166e84e978eb23a0133d08db9d00cd276c6ce3d0a51e39e7366e78abd73",
+  "implementation_sha256": "8cfb7e9a53624bace93d42a9f929412965106bb2a8dfe54d2bb3936a86d177c1",
+  "device": "cpu",
+  "device_name": "CPU",
+  "peak_allocated_gb": 0.0,
+  "peak_reserved_gb": 0.0
+}
